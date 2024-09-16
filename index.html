@@ -6,59 +6,67 @@
     <title>Mohamed Magdy CV</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            color: #333;
         }
         .container {
-            max-width: 1200px;
-            margin: 0 auto;
+            max-width: 1000px;
+            margin: 20px auto;
             display: flex;
             background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             overflow: hidden;
         }
         .sidebar {
-            width: 300px;
+            width: 35%;
             background-color: #333;
             color: white;
-            text-align: center;
-            padding: 20px;
+            padding: 30px 20px;
         }
         .sidebar img {
-            width: 150px;
-            border-radius: 50%;
+            width: 100%;
+            border-radius: 10px;
             margin-bottom: 20px;
         }
-        .sidebar h1 {
-            font-size: 24px;
-            margin: 10px 0;
+        .sidebar h2 {
+            font-size: 20px;
+            color: #FFC107; /* Yellow */
+            margin-bottom: 10px;
         }
-        .sidebar p {
+        .sidebar p, .sidebar a {
             font-size: 14px;
             color: #ddd;
         }
-        .content {
-            padding: 20px;
-            flex-grow: 1;
+        .sidebar a {
+            color: #FFC107; /* Yellow */
+            text-decoration: none;
         }
-        h2 {
-            font-size: 24px;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+        .main {
+            width: 65%;
+            padding: 40px 30px;
         }
-        .section {
+        .main h1 {
+            font-size: 32px;
+            color: #FFC107; /* Yellow */
+            margin-bottom: 5px;
+        }
+        .main h2 {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .main .section {
             margin-bottom: 30px;
         }
-        ul {
-            list-style: none;
-            padding: 0;
+        .section-title {
+            border-bottom: 2px solid #FFC107;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
         }
-        ul li {
+        .section-content p {
             margin-bottom: 10px;
         }
         .skills {
@@ -70,57 +78,64 @@
             border-radius: 5px;
             padding: 10px;
             margin: 5px;
-            width: calc(50% - 10px);
             text-align: center;
+            width: calc(50% - 10px);
         }
     </style>
 </head>
 <body>
 
     <div class="container">
+        <!-- Left Sidebar -->
         <div class="sidebar">
             <!-- Add your picture here -->
             <img src="https://i.ibb.co/qNvfTX6/KNP-4652-copy-profile.png" alt="Profile Picture">
-            <h1>Mohamed Magdy</h1>
+            <h2>Mohamed Magdy</h2>
             <p>Graphic Designer</p>
             <p>+2 01094325024</p>
             <p>MohamedMagdyK93@gmail.com</p>
-            <p><a href="https://be.net/MohamedMagdyK1" style="color: #fff;">Portfolio</a></p>
+            <p><a href="https://be.net/MohamedMagdyK1">Portfolio</a></p>
+
+            <h2>Education</h2>
+            <p><strong>Communication & Electronics Engineering</strong>, NDETI (09/2011 - 07/2017)</p>
+            <p><strong>Management Information Systems</strong>, HIMS (09/2018 - 07/2022)</p>
+
+            <h2>References</h2>
+            <p>Sara Taylore, Director, Company Name</p>
+            <p>Micka Anderson, Web Developer, Company Name</p>
         </div>
 
-        <div class="content">
+        <!-- Main Content -->
+        <div class="main">
+            <h1>Mohamed Magdy</h1>
+            <h2>Professional Title: Graphic Designer</h2>
+
             <div class="section">
-                <h2>Summary</h2>
-                <p>Creative and detail-oriented graphic designer with over five years of experience. Proficient in branding, social media designs, and logo designs. Skilled with Adobe Photoshop, Illustrator, and Premiere Pro. Passionate about creating captivating designs that resonate with audiences.</p>
+                <div class="section-title"><h2>About Me</h2></div>
+                <div class="section-content">
+                    <p>Creative and detail-oriented graphic designer with over five years of experience. Proficient in branding, social media designs, and logo designs. Skilled with Adobe Photoshop, Illustrator, and Premiere Pro.</p>
+                </div>
             </div>
 
             <div class="section">
-                <h2>Experience</h2>
-                <ul>
-                    <li><strong>Sr. Graphic Designer & Head of Marketing Team</strong>, Tass Academy (12/2021 - Present)</li>
-                    <li><strong>Graphic Designer (Part-Time)</strong>, CURE for Business Development (02/2022 - 11/2023)</li>
-                    <li><strong>Graphic Designer (Part-Time, Remotely)</strong>, Spades (12/2021 - 02/2022)</li>
-                    <li><strong>Graphic Designer & Jr. Media Buyer</strong>, Spread Agency (09/2019 - 12/2021)</li>
-                    <li><strong>Jr. Graphic Designer</strong>, Sun Digital Marketing Agency (11/2017 - 08/2019)</li>
-                </ul>
+                <div class="section-title"><h2>Work Experience</h2></div>
+                <div class="section-content">
+                    <p><strong>Sr. Graphic Designer & Head of Marketing Team</strong>, Tass Academy (12/2021 - Present)</p>
+                    <p><strong>Graphic Designer (Part-Time)</strong>, CURE for Business Development (02/2022 - 11/2023)</p>
+                    <p><strong>Graphic Designer (Part-Time, Remotely)</strong>, Spades (12/2021 - 02/2022)</p>
+                    <p><strong>Graphic Designer & Jr. Media Buyer</strong>, Spread Agency (09/2019 - 12/2021)</p>
+                    <p><strong>Jr. Graphic Designer</strong>, Sun Digital Marketing Agency (11/2017 - 08/2019)</p>
+                </div>
             </div>
 
             <div class="section">
-                <h2>Education</h2>
-                <ul>
-                    <li><strong>Communication & Electronics Engineering</strong>, NDETI (09/2011 - 07/2017)</li>
-                    <li><strong>Management Information Systems</strong>, HIMS (09/2018 - 07/2022)</li>
-                </ul>
-            </div>
-
-            <div class="section">
-                <h2>Skills</h2>
+                <div class="section-title"><h2>Skills</h2></div>
                 <div class="skills">
-                    <div>Adobe Photoshop: Expert</div>
-                    <div>Adobe Illustrator: Good</div>
-                    <div>Adobe Premiere Pro: Average</div>
-                    <div>Meta Ads: Expert</div>
-                    <div>Adobe After Effects: Average</div>
+                    <div>Adobe Photoshop</div>
+                    <div>Adobe Illustrator</div>
+                    <div>Adobe Premiere Pro</div>
+                    <div>Meta Ads</div>
+                    <div>Adobe After Effects</div>
                 </div>
             </div>
         </div>
